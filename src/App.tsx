@@ -3,7 +3,7 @@ import { AlterantData, alterants } from "./data/alterants";
 import { makeMultiMap } from "./util";
 import { sequences } from "./data/sequences";
 
-const alterantsByName = makeMultiMap(alterants.map((a) => [a.name, a]));
+const alterantsByName = makeMultiMap(alterants.map((a) => [a.name.toLowerCase(), a]));
 
 export const App: TPC<{}> = (_, instance) => {
 	let inputValue = "";
@@ -26,8 +26,7 @@ export const App: TPC<{}> = (_, instance) => {
 	));
 
 	function renderAlterants(name: string, alterants: AlterantData[] | undefined) {
-		const shape = alterants?.[0]?.shape;
-
+		name = alterants?.[0]?.name ?? name;
 		return (
 			<div>
 				<h3>{name}</h3>
@@ -71,7 +70,7 @@ export const App: TPC<{}> = (_, instance) => {
 				<input type="text" value={inputValue} onInput={onInput} />
 				{sequenceButtons}
 				<hr />
-				{alterantStrings.map((s) => renderAlterants(s, alterantsByName.get(s)))}
+				{alterantStrings.map((s) => renderAlterants(s, alterantsByName.get(s.toLowerCase())))}
 			</div>
 		);
 	};
