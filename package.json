@@ -1,5 +1,5 @@
 {
-	"name": "corridon-alterants",
+	"name": "coridden-alterants",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
@@ -20,3 +20,4 @@
 		"vdomk": "^0.1.5"
 	}
 }
+

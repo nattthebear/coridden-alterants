@@ -40,4 +40,30 @@ export const sequences: SequenceData[] = [
 		sequence: ["ApX", "MeaX", "Cos", "Cos", "Ag"],
 		stats: ["+2 to all Trap skills"],
 	},
+	{
+		name: "The Berserker",
+		sequence: ["Apm", "Ews", "DeX", "MhaX", "Atp", "Ere"],
+		stats: ["+2 to all Berserker skills"],
+	},
+	{
+		name: "Blaze",
+		sequence: ["Hea", "Dot", "FrX", "Atb", "DmX"],
+		stats: ["+10% Heat damage", "+10% Heat ability damage", "+1 to all Heat skills"],
+	},
+	{
+		name: "Celestial",
+		sequence: ["Are", "MhaX", "Dem", "Atb", "MeaX"],
+		stats: [
+			"10% max Elemental damage resistance",
+			"Elemental damage resistance: 10%",
+			"Cannot be scorched",
+			"Cannot be shocked",
+			"Cannot be poisoned",
+		],
+	},
+	{
+		name: "Venom",
+		sequence: ["Poa", "PdX", "Dot", "Atb", "Cr"],
+		stats: ["+10% Poison damage", "+10% Poison ability damage", "+1 to all Poison skills"],
+	},
 ];
