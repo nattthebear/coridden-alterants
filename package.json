@@ -1,0 +1,22 @@
+{
+	"name": "corridon-alterants",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "parcel serve ./src/index.html --dist-dir .parcel-dev --public-url / --port 3000",
+		"type-check": "tsc",
+		"clear-cache": "rimraf ./.parcel-dev ./.parcel-cache"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"parcel": "^2.13.3",
+		"prettier": "^3.4.2",
+		"rimraf": "^6.0.1",
+		"typescript": "^5.7.3"
+	},
+	"dependencies": {
+		"vdomk": "^0.1.5"
+	}
+}
