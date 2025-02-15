@@ -66,4 +66,39 @@ export const sequences: SequenceData[] = [
 		sequence: ["Poa", "PdX", "Dot", "Atb", "Cr"],
 		stats: ["+10% Poison damage", "+10% Poison ability damage", "+1 to all Poison skills"],
 	},
+	{
+		name: "Thunder",
+		sequence: ["Eca", "FrX", "Dot", "Atb", "DmX"],
+		stats: ["+10% Electric damage", "+10% Electric ability damage", "+1 to all Electric skills"],
+	},
+	{
+		name: "The Timekeeper",
+		sequence: ["Ag", "DeX", "Ere", "Mea", "MhaX", "Wh"],
+		stats: ["+2 to all Time Bender skills"],
+	},
+	{
+		name: "The Protector",
+		sequence: ["Dem", "Ere", "Ews", "MeaX", "MhaX", "Pre"],
+		stats: ["+2 to all Protector skills"],
+	},
+	{
+		name: "Master",
+		sequence: ["ApX", "Ere", "Dre", "MeaX", "Dem", "Dem"],
+		stats: ["+1 to all tier 3 skills"],
+	},
+	{
+		name: "Obsidian",
+		sequence: ["PdX", "Che", "Dm", "Ecr"],
+		stats: ["20% chance to spawn Shard of Destruction on strike"],
+	},
+	{
+		name: "The Energizer",
+		sequence: ["Adm", "Ag", "ApX", "Cos", "DeX", "Ree"],
+		stats: ["+2 to all Energizer skills"],
+	},
+	{
+		name: "The Devotee",
+		sequence: ["Apm", "Ate", "DeX", "MeaX", "Mha", "Cos"],
+		stats: ["+2 to all Devotee skills"],
+	},
 ];
